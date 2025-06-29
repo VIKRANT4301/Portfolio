@@ -10,6 +10,14 @@ import Fundamental from './assets/certificates/Fortinet_Certified_Fundamentals_i
 import software from './assets/certificates/software development.jpg';
 import hacker from './assets/certificates/hackerheist.jpg';
 import Associates from './assets/certificates/Fortinet_Certified_Associate_in_Cybersecurity.png';
+import Network from './assets/certificates/network.mp4';
+import Resume from './assets/certificates/Vikrant Chakole .pdf';
+import Project from './assets/certificates/Project.png';
+import medicine from './assets/certificates/medicine.png';
+import port from './assets/certificates/port.png';
+import stock from './assets/certificates/stock.jpeg';
+import Project2 from './assets/certificates/Project2.png';
+import Project3 from './assets/certificates/Project3.png';
 
 
 import { FaDownload,FaEye } from "react-icons/fa";
@@ -140,7 +148,7 @@ function App() {
         <section className="home" id="home">
 
   <video className="bg-video" autoPlay loop muted playsInline>
-    <source src="../public/certificates/network.mp4" type="video/mp4" />
+    <source src={Network} type="video/mp4" />
   </video>
 
           <div className="home-content">
@@ -162,7 +170,7 @@ function App() {
   <a href="https://www.instagram.com/vikrant.32_" target="_blank" rel="noopener noreferrer">
     <FaInstagram />
   </a>
-</div> 
+</div>
         <div className="btn-group">
                 <a href="#contact" className="btn">Contact</a>
               </div>
@@ -187,17 +195,23 @@ function App() {
         </p>
       </div>
       <div className="about-image">
-        <img src={profileImage} alt="Vikrant Chakole" className="profile-img" />
+         <img
+            src={profileImage}
+             alt="Vikrant Chakole"
+             className="profile-img"
+             onContextMenu={(e) => e.preventDefault()}
+              draggable="false"
+         />
       </div>
     </div>
   </div>
 
   <div className="cv-section">
-    <a href="../public/certificates/Vikrant Chakole .pdf" className="btn-down" download>
+    <a href={Resume} className="btn-down" download>
       <FaDownload className="icon" />
       Download CV
     </a>
-    <a href="../public/certificates/Vikrant Chakole .pdf" className="btn-down" target="_blank" rel="noopener noreferrer">
+    <a href={Resume}  className="btn-down" target="_blank" rel="noopener noreferrer">
       <FaEye className="icon" />
       Preview CV
     </a>
@@ -280,7 +294,7 @@ function App() {
           description: "Income Predictor is a Flask-based web app that uses a pre-trained Random model to predict if an individual's income .",
           tech: ["React", "React Icons","Django, Flask, Scikit-learn, Pandas"],
           link: "https://github.com/VIKRANT4301/Income_predictor",
-          screenshot: "../public/certificates/Project.png",
+          screenshot: Project,
 
         },
          {
@@ -288,14 +302,14 @@ function App() {
           description: "A responsive Gemini Clone built with React and Vite, delivering real-time AI-powered chat interactions with a sleek, modern UI.",
           tech: [ "React", "Gemini API"],
           link: "https://github.com/VIKRANT4301/Gemini_Clone",
-          screenshot: "../public/certificates/Project3.png",
+          screenshot: Project3,
          },
          {
           title: "Population Find Web",
           description: "A web-based tool that fetches and displays real-time population data by country or region using public APIs, built with HTML, CSS, JavaScript, and RESTful integration.",
           tech: ["React", "CSS", "React Icons","API"],
           link: "https://github.com/VIKRANT4301/Population_Find",
-          screenshot: "../public/certificates/Project2.png",
+          screenshot: Project2,
 
         },
         {
@@ -303,7 +317,7 @@ function App() {
           description: "A full-stack React and Vite application for efficiently managing medicines, dealers, and customers with real-time CRUD operations.",
           tech: ["MongoDB", "Express", "React", "Node.js"],
           link: "https://github.com/VIKRANT4301/Medicine-Store",
-          screenshot: "../public/certificates/medicine.png",
+          screenshot: medicine,
 
         },
 
@@ -312,7 +326,7 @@ function App() {
           description: "A responsive and animated React portfolio showcasing skills, projects, certifications, and more.",
           tech: ["React", "CSS", "React Icons"],
           link: "https://vikrant4301.github.io/My-Portfolio/",
-          screenshot: "../public/certificates/port.png",
+          screenshot: port,
 
         },
         {
@@ -320,7 +334,7 @@ function App() {
           description: "A web app using React and Django with ML model (Jupyter notebook) to predict stock trends.",
           tech: ["React", "Django", "Python"],
           link: "https://github.com/VIKRANT4301/Stock-Prediction",
-          screenshot: "../public/certificates/stock.jpeg",
+          screenshot: stock,
 
         },
       ].map((project, index) => (
@@ -375,7 +389,6 @@ function App() {
           </p>
         </div>
 
-        {/* Certificate Preview */}
         <div className="modal-cert-preview">
           {selectedCert.file ? (
             selectedCert.type === "image" ? (
