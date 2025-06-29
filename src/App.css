@@ -1357,7 +1357,21 @@ footer button a {
     gap: 1rem;
     margin: 2rem 0;
   }
+  .timeline-title {
+    font-size: 2rem;
+  }
 
+  .timeline-content {
+    padding: 1rem;
+  }
+
+  .timeline-content h3 {
+    font-size: 1.2rem;
+  }
+
+  .timeline-content p {
+    font-size: 0.95rem;
+  }
   /* Skills section */
   .skills-section {
     padding: 60px 16px;
