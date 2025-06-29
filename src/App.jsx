@@ -18,6 +18,7 @@ import port from './assets/certificates/port.png';
 import stock from './assets/certificates/stock.jpeg';
 import Project2 from './assets/certificates/Project2.png';
 import Project3 from './assets/certificates/Project3.png';
+import job from './assets/certificates/job.png';
 
 
 import { FaDownload,FaEye } from "react-icons/fa";
@@ -47,6 +48,14 @@ const certifications = [
     type: "image",
   },
    {
+    title: "Job Readlines Program",
+    issuer: "SAP",
+    date: "June 2025",
+    file: job,
+    type: "image",
+  },
+ 
+   {
     title: " Create and manage canvas apps with Power Apps",
     issuer: "Microsoft",
     date: "June 2025",
@@ -74,15 +83,6 @@ const certifications = [
     file: software,
     type: "image",
   },
- 
-  {
-    title: "Fundamentals in Cybersecurity",
-    issuer: "FORTINET",
-    date: "October 2023",
-    file: Fundamental,
-    type: "image",
-  },
- 
   {
     title: "Hacker's Heist Team Member",
     issuer: "SVPCET",
