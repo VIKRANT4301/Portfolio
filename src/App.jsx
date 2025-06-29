@@ -1,6 +1,17 @@
 import React, { useState,useEffect } from 'react';
 import './App.css';
 import profileImage from './assets/Image3.jpg';
+import nptelImage from './assets/certificates/NPTEL.png';
+import mern from './assets/certificates/VIKRANT PRASHANT CHAKOLE_MERN Stack Application Development.png';
+import Applied from './assets/certificates/Microsoft Applied Skills.png';
+import Applies from './assets/certificates/Microsoft Applied Skills[1].png';
+import Productivity from './assets/certificates/Productvity.jpg';
+import Fundamental from './assets/certificates/Fortinet_Certified_Fundamentals_in_Cybersecurity.png';
+import software from './assets/certificates/software development.jpg';
+import hacker from './assets/certificates/hackerheist.jpg';
+import Associates from './assets/certificates/Fortinet_Certified_Associate_in_Cybersecurity.png';
+
+
 import { FaDownload,FaEye } from "react-icons/fa";
 
 import {
@@ -17,42 +28,42 @@ const certifications = [
     title: "NPTEL",
     issuer: "SWAYAM",
     date: "December 2024",
-    file: "/certificates/NPTEL.png",
+    file:  nptelImage,
     type: "image",
   },
    {
     title: "MERN Stack Application Development",
     issuer: "EDUNET & TECHSAKSHAM",
     date: "March 2025",
-    file: "/certificates/VIKRANT PRASHANT CHAKOLE_MERN Stack Application Development.png",
+    file: mern,
     type: "image",
   },
    {
     title: " Create and manage canvas apps with Power Apps",
     issuer: "Microsoft",
     date: "June 2025",
-    file: "/certificates/Microsoft Applied Skills.png",
+    file: Applied,
     type: "image",
   },
   {
     title: "Data science and machine learning Solution ",
     issuer: "Microsoft",
     date: "December 2024",
-    file: "/certificates/Microsoft Applied Skills[1].png",
+    file: Applies,
     type: "image",
   },
   {
     title: "Microsoft Copilot for Productivity",
     issuer: "Microsoft and LinkedIn",
     date: "October 2024",
-    file: "/certificates/Productvity.jpg",
+    file:Productivity,
     type: "image",
   },
     {
     title:"Career Essentials in Software Development",
     issuer: "Microsoft and LinkedIn",
     date: "October 2024",
-    file: "/certificates/software development.jpg",
+    file: software,
     type: "image",
   },
  
@@ -60,7 +71,7 @@ const certifications = [
     title: "Fundamentals in Cybersecurity",
     issuer: "FORTINET",
     date: "October 2023",
-    file: "/certificates/Fortinet_Certified_Fundamentals_in_Cybersecurity.png",
+    file: Fundamental,
     type: "image",
   },
  
@@ -68,17 +79,17 @@ const certifications = [
     title: "Hacker's Heist Team Member",
     issuer: "SVPCET",
     date: "November 2023",
-    file: "/certificates/hackerheist.jpg",
+    file: hacker,
     type: "image",
   },
   {
     title: "Associates in Cyber Security",
     issuer: "FORTINET",
     date: "Oct 2023-Oct 2025",
-    file: "/certificates/Fortinet_Certified_Associate_in_Cybersecurity.png",
+    file:Associates,
     type: "image",
   },
-  
+
 ];
 
 
