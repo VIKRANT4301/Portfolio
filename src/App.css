@@ -1361,17 +1361,24 @@ footer button a {
     font-size: 2rem;
   }
 
+   .timeline-item {
+    width: 100%;
+    padding: 1rem 0.5rem;
+  }
+
   .timeline-content {
+    font-size: 0.95rem;
     padding: 1rem;
   }
 
+  .timeline-content p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
   .timeline-content h3 {
     font-size: 1.2rem;
   }
 
-  .timeline-content p {
-    font-size: 0.95rem;
-  }
   /* Skills section */
   .skills-section {
     padding: 60px 16px;
